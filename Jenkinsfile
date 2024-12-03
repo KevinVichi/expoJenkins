@@ -14,7 +14,7 @@ pipeline{
         stage('Clonar Repositorio'){
             steps{
                 script{
-                    git 'https://github.com/KevinVichi/expoJenkins.git'
+                    git branch: 'main', url: 'https://github.com/KevinVichi/expoJenkins.git'
                 }
             }
         }
